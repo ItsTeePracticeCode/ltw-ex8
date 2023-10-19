@@ -114,9 +114,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hinh-nen-bau-troi.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\pngtree-blue-sky-clear-sky-image_2168219.jpg" />
   </ItemGroup>
   <ItemGroup>

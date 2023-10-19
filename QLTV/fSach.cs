@@ -293,7 +293,7 @@ namespace QLTV
                     s.NgayNhap.Value.Day == dtpNgayNhap.Value.Day).ToList();
                 kq2 = kq;
             }
-            if(checkNull() && !chkNgayNhap.Checked)
+            if (txtNamXB.Text == "" && txtTenSach.Text == "" && txtNhaXB.Text == "" && txtTacGia.Text == "" && txtTriGia.Text == "" && !chkNgayNhap.Checked)
             {
                 MessageBox.Show("Không có dữ liệu tìm kiếm sẽ trả về bảng chính", "Thông báo", MessageBoxButtons.OK);
             }
@@ -327,11 +327,11 @@ namespace QLTV
 
         private void txtNamXB_TextChanged(object sender, EventArgs e)
         {
+            //kt rỗng
             if (string.IsNullOrEmpty(txtNamXB.Text))
             {
                 return;
             }
-
             // Kiểm tra xem nội dung của TextBox có phải là số không
             if (!int.TryParse(txtNamXB.Text, out int enteredYear))
             {

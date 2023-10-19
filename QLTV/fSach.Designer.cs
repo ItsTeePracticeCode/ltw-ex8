@@ -255,7 +255,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.dtpNgayNhap);
             this.groupBox1.Controls.Add(this.txtNamXB);
             this.groupBox1.Controls.Add(this.txtMaSach);
@@ -273,21 +272,23 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox1.Location = new System.Drawing.Point(10, 88);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1527, 445);
+            this.groupBox1.Size = new System.Drawing.Size(1153, 445);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Sách";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.chkTriGia);
             this.groupBox2.Controls.Add(this.chkNamXB);
             this.groupBox2.Controls.Add(this.chkNam);
             this.groupBox2.Controls.Add(this.chkNgay);
             this.groupBox2.Controls.Add(this.chkThang);
-            this.groupBox2.Location = new System.Drawing.Point(1141, 48);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.groupBox2.Location = new System.Drawing.Point(1169, 102);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(380, 379);
+            this.groupBox2.Size = new System.Drawing.Size(368, 431);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Lọc Thông Tin";
@@ -498,8 +499,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::QLTV.Properties.Resources.blue_sky_with_clouds;
             this.ClientSize = new System.Drawing.Size(1964, 1113);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.chkNgayNhap);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.tbnSua);
